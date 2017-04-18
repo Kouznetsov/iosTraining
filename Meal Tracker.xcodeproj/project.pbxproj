@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		EAFB7F6D1EA002BA004F4DFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFB7F6C1EA002BA004F4DFA /* AppDelegate.swift */; };
-		EAFB7F6F1EA002BA004F4DFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFB7F6E1EA002BA004F4DFA /* ViewController.swift */; };
+		EAFB7F6F1EA002BA004F4DFA /* MealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFB7F6E1EA002BA004F4DFA /* MealViewController.swift */; };
 		EAFB7F721EA002BA004F4DFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFB7F701EA002BA004F4DFA /* Main.storyboard */; };
 		EAFB7F741EA002BA004F4DFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAFB7F731EA002BA004F4DFA /* Assets.xcassets */; };
 		EAFB7F771EA002BA004F4DFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFB7F751EA002BA004F4DFA /* LaunchScreen.storyboard */; };
 		EAFB7F821EA002BA004F4DFA /* Meal_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFB7F811EA002BA004F4DFA /* Meal_TrackerTests.swift */; };
 		EAFB7F8D1EA002BA004F4DFA /* Meal_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFB7F8C1EA002BA004F4DFA /* Meal_TrackerUITests.swift */; };
+		EAFB7F9B1EA140CA004F4DFA /* RatingControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFB7F9A1EA140CA004F4DFA /* RatingControll.swift */; };
+		EAFB7FA01EA22410004F4DFA /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFB7F9F1EA22410004F4DFA /* Meal.swift */; };
+		EAFB7FA21EA2331C004F4DFA /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFB7FA11EA2331C004F4DFA /* MealTableViewCell.swift */; };
+		EAFB7FA41EA237AC004F4DFA /* MealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFB7FA31EA237AC004F4DFA /* MealTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,7 @@
 /* Begin PBXFileReference section */
 		EAFB7F691EA002BA004F4DFA /* Meal Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meal Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAFB7F6C1EA002BA004F4DFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EAFB7F6E1EA002BA004F4DFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EAFB7F6E1EA002BA004F4DFA /* MealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewController.swift; sourceTree = "<group>"; };
 		EAFB7F711EA002BA004F4DFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EAFB7F731EA002BA004F4DFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAFB7F761EA002BA004F4DFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +51,10 @@
 		EAFB7F881EA002BA004F4DFA /* Meal TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Meal TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAFB7F8C1EA002BA004F4DFA /* Meal_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal_TrackerUITests.swift; sourceTree = "<group>"; };
 		EAFB7F8E1EA002BA004F4DFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAFB7F9A1EA140CA004F4DFA /* RatingControll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RatingControll.swift; path = ../RatingControll.swift; sourceTree = "<group>"; };
+		EAFB7F9F1EA22410004F4DFA /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Meal.swift; path = ../Meal.swift; sourceTree = "<group>"; };
+		EAFB7FA11EA2331C004F4DFA /* MealTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
+		EAFB7FA31EA237AC004F4DFA /* MealTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +105,13 @@
 		EAFB7F6B1EA002BA004F4DFA /* Meal Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				EAFB7F9F1EA22410004F4DFA /* Meal.swift */,
 				EAFB7F6C1EA002BA004F4DFA /* AppDelegate.swift */,
-				EAFB7F6E1EA002BA004F4DFA /* ViewController.swift */,
+				EAFB7F9A1EA140CA004F4DFA /* RatingControll.swift */,
+				EAFB7F6E1EA002BA004F4DFA /* MealViewController.swift */,
 				EAFB7F701EA002BA004F4DFA /* Main.storyboard */,
+				EAFB7FA31EA237AC004F4DFA /* MealTableViewController.swift */,
+				EAFB7FA11EA2331C004F4DFA /* MealTableViewCell.swift */,
 				EAFB7F731EA002BA004F4DFA /* Assets.xcassets */,
 				EAFB7F751EA002BA004F4DFA /* LaunchScreen.storyboard */,
 				EAFB7F781EA002BA004F4DFA /* Info.plist */,
@@ -259,8 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAFB7F6F1EA002BA004F4DFA /* ViewController.swift in Sources */,
+				EAFB7FA01EA22410004F4DFA /* Meal.swift in Sources */,
+				EAFB7F9B1EA140CA004F4DFA /* RatingControll.swift in Sources */,
+				EAFB7F6F1EA002BA004F4DFA /* MealViewController.swift in Sources */,
 				EAFB7F6D1EA002BA004F4DFA /* AppDelegate.swift in Sources */,
+				EAFB7FA41EA237AC004F4DFA /* MealTableViewController.swift in Sources */,
+				EAFB7FA21EA2331C004F4DFA /* MealTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
