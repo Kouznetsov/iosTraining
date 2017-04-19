@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import os.log
 
 class MealTableViewController: UITableViewController {
 
@@ -16,7 +17,11 @@ class MealTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        loadMeals()
+        if let savedMeals = loadMeals() {
+            meals += savedMeals
+        } else {
+            loadSampleMeals()
+        }
         
         navigationItem.leftBarButtonItem = editButtonItem
         // Uncomment the following line to preserve selection between presentations
@@ -66,6 +71,7 @@ class MealTableViewController: UITableViewController {
                 meals.append(meal)
                 tableView.insertRows(at: [newIndexPath], with: .automatic)
             }
+            saveMeals()
         }
     }
     
@@ -82,9 +88,10 @@ class MealTableViewController: UITableViewController {
         if editingStyle == .delete {
             meals.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
+            saveMeals()
         } else if editingStyle == .insert {
             
-        }    
+        }
     }
     
 
@@ -117,7 +124,7 @@ class MealTableViewController: UITableViewController {
                 fatalError("Unexpected destination \(segue.destination)")
             }
             guard let selectedMealCell = sender as? MealTableViewCell else {
-                fatalError("unexpected sender \(sender)")
+                fatalError("unexpected sender \(String(describing: sender))")
             }
             guard let indexPath = tableView.indexPath(for: selectedMealCell) else {
                 fatalError("Did not find \(selectedMealCell)")
@@ -125,13 +132,13 @@ class MealTableViewController: UITableViewController {
             let selectedMeal = meals[indexPath.row]
             mealDetailViewController.meal = selectedMeal
         default:
-            print("Unexpected segue identifier \(segue.identifier)")
+            print("Unexpected segue identifier \(String(describing: segue.identifier))")
         }
     }
     
     
     //MARK: Private Methods
-    private func loadMeals() {
+    private func loadSampleMeals() {
         let photo1 = UIImage(named: "meal1")
         let photo2 = UIImage(named: "meal2")
         let photo3 = UIImage(named: "meal3")
@@ -150,5 +157,21 @@ class MealTableViewController: UITableViewController {
         
         meals += [meal1, meal2, meal3]
     }
+    
+    
+    private func saveMeals() {
+        let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(meals, toFile: Meal.ArchiveURL.path)
+        
+        if isSuccessfulSave {
+            os_log("Meals successfully saved.", log: OSLog.default, type: .debug)
+        } else {
+            os_log("Failed to save meals...", log: OSLog.default, type: .error)
+        }
+    }
+    
+    private func loadMeals() -> [Meal]? {
+        return NSKeyedUnarchiver.unarchiveObject(withFile: Meal.ArchiveURL.path) as? [Meal]
+    }
+
 
 }

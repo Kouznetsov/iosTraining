@@ -104,7 +104,5 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
         let text = mealEdit.text ?? ""
         saveButton.isEnabled = !text.isEmpty
     }
-   
-    
 }
 

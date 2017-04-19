@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Meal Tracker/MealTableViewController.swift"
+            timestampString = "514289770.628437"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Meal_Tracker.MealTableViewController.__deallocating_deinit"
+                  moduleName = "Meal Tracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/karim/Workspace/iosTraining/Meal%20Tracker/MealTableViewController.swift"
+                  timestampString = "514289773.493079"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Meal_Tracker.MealTableViewController.init (style : __C.UITableViewStyle) -&gt; Meal_Tracker.MealTableViewController"
+                  moduleName = "Meal Tracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/karim/Workspace/iosTraining/Meal%20Tracker/MealTableViewController.swift"
+                  timestampString = "514289773.497201"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Meal_Tracker.MealTableViewController.__allocating_init (style : __C.UITableViewStyle) -&gt; Meal_Tracker.MealTableViewController"
+                  moduleName = "Meal Tracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/karim/Workspace/iosTraining/Meal%20Tracker/MealTableViewController.swift"
+                  timestampString = "514289773.499144"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Meal_Tracker.MealTableViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Meal_Tracker.MealTableViewController"
+                  moduleName = "Meal Tracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/karim/Workspace/iosTraining/Meal%20Tracker/MealTableViewController.swift"
+                  timestampString = "514289773.500917"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "57">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Meal_Tracker.MealTableViewController.__allocating_init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Meal_Tracker.MealTableViewController"
+                  moduleName = "Meal Tracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/karim/Workspace/iosTraining/Meal%20Tracker/MealTableViewController.swift"
+                  timestampString = "514289773.502673"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Meal_Tracker.MealTableViewController.__allocating_init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Meal_Tracker.MealTableViewController&gt;"
+                  moduleName = "Meal Tracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/karim/Workspace/iosTraining/Meal%20Tracker/MealTableViewController.swift"
+                  timestampString = "514289773.504403"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Meal_Tracker.MealTableViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Meal_Tracker.MealTableViewController&gt;"
+                  moduleName = "Meal Tracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/karim/Workspace/iosTraining/Meal%20Tracker/MealTableViewController.swift"
+                  timestampString = "514289773.506103"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
